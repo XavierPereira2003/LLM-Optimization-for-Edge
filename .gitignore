@@ -1,0 +1,6 @@
+data/
+**/data/
+
+**/checkpoint-*
+
+**/*.log

@@ -1,0 +1,129 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" version="24.8.2">
+  <diagram name="Page-1" id="abguH3KcSW6RfeYemPaN">
+    <mxGraphModel dx="1434" dy="788" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Hji_fCHVWQs6ifgiZRv4-10" value="" style="group;labelBackgroundColor=none;fontColor=#1D3557;" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="120" y="320" width="70" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Hji_fCHVWQs6ifgiZRv4-1" value="" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#A8DADC;strokeColor=#457B9D;fontColor=#1D3557;" vertex="1" parent="Hji_fCHVWQs6ifgiZRv4-10">
+          <mxGeometry width="70" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Hji_fCHVWQs6ifgiZRv4-3" value="Control Node" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;fontColor=#1D3557;" vertex="1" parent="Hji_fCHVWQs6ifgiZRv4-10">
+          <mxGeometry y="35" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Hji_fCHVWQs6ifgiZRv4-20" value="" style="group;labelBackgroundColor=none;fontColor=#1D3557;" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="360" y="40" width="130" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="Hji_fCHVWQs6ifgiZRv4-15" value="" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#A8DADC;strokeColor=#457B9D;fontColor=#1D3557;" vertex="1" parent="Hji_fCHVWQs6ifgiZRv4-20">
+          <mxGeometry x="10" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Hji_fCHVWQs6ifgiZRv4-12" value="" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#A8DADC;strokeColor=#457B9D;fontColor=#1D3557;" vertex="1" parent="Hji_fCHVWQs6ifgiZRv4-20">
+          <mxGeometry y="100" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Hji_fCHVWQs6ifgiZRv4-11" value="Node with the base model" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;fontColor=#1D3557;" vertex="1" parent="Hji_fCHVWQs6ifgiZRv4-20">
+          <mxGeometry x="20" y="115" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Hji_fCHVWQs6ifgiZRv4-13" value="Task specific LoRA" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#A8DADC;strokeColor=#457B9D;fontColor=#1D3557;" vertex="1" parent="Hji_fCHVWQs6ifgiZRv4-20">
+          <mxGeometry y="10" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Hji_fCHVWQs6ifgiZRv4-19" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=none;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://www.svgrepo.com/show/57121/two-thin-arrows-forming-a-circle.svg;rotation=60;fillColor=#A8DADC;strokeColor=#457B9D;fontColor=#1D3557;" vertex="1" parent="Hji_fCHVWQs6ifgiZRv4-20">
+          <mxGeometry x="32.5" y="53.17" width="55" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="Hji_fCHVWQs6ifgiZRv4-32" value="" style="group;labelBackgroundColor=none;fontColor=#1D3557;" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="360" y="40" width="130" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="Hji_fCHVWQs6ifgiZRv4-33" value="" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#A8DADC;strokeColor=#457B9D;fontColor=#1D3557;" vertex="1" parent="Hji_fCHVWQs6ifgiZRv4-32">
+          <mxGeometry x="10" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Hji_fCHVWQs6ifgiZRv4-34" value="" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#A8DADC;strokeColor=#457B9D;fontColor=#1D3557;" vertex="1" parent="Hji_fCHVWQs6ifgiZRv4-32">
+          <mxGeometry y="100" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Hji_fCHVWQs6ifgiZRv4-35" value="Node with the base model" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;fontColor=#1D3557;" vertex="1" parent="Hji_fCHVWQs6ifgiZRv4-32">
+          <mxGeometry x="20" y="115" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Hji_fCHVWQs6ifgiZRv4-36" value="Task specific LoRA" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#A8DADC;strokeColor=#457B9D;fontColor=#1D3557;" vertex="1" parent="Hji_fCHVWQs6ifgiZRv4-32">
+          <mxGeometry y="10" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Hji_fCHVWQs6ifgiZRv4-37" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=none;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://www.svgrepo.com/show/57121/two-thin-arrows-forming-a-circle.svg;rotation=60;fillColor=#A8DADC;strokeColor=#457B9D;fontColor=#1D3557;" vertex="1" parent="Hji_fCHVWQs6ifgiZRv4-32">
+          <mxGeometry x="32.5" y="53.17" width="55" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="Hji_fCHVWQs6ifgiZRv4-38" value="" style="group;labelBackgroundColor=none;fontColor=#1D3557;" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="360" y="270" width="130" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="Hji_fCHVWQs6ifgiZRv4-39" value="" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#A8DADC;strokeColor=#457B9D;fontColor=#1D3557;" vertex="1" parent="Hji_fCHVWQs6ifgiZRv4-38">
+          <mxGeometry x="10" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Hji_fCHVWQs6ifgiZRv4-40" value="" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#A8DADC;strokeColor=#457B9D;fontColor=#1D3557;" vertex="1" parent="Hji_fCHVWQs6ifgiZRv4-38">
+          <mxGeometry y="100" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Hji_fCHVWQs6ifgiZRv4-41" value="Node with the base model" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;fontColor=#1D3557;" vertex="1" parent="Hji_fCHVWQs6ifgiZRv4-38">
+          <mxGeometry x="20" y="115" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Hji_fCHVWQs6ifgiZRv4-42" value="Task specific LoRA" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#A8DADC;strokeColor=#457B9D;fontColor=#1D3557;" vertex="1" parent="Hji_fCHVWQs6ifgiZRv4-38">
+          <mxGeometry y="10" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Hji_fCHVWQs6ifgiZRv4-43" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=none;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://www.svgrepo.com/show/57121/two-thin-arrows-forming-a-circle.svg;rotation=60;fillColor=#A8DADC;strokeColor=#457B9D;fontColor=#1D3557;" vertex="1" parent="Hji_fCHVWQs6ifgiZRv4-38">
+          <mxGeometry x="32.5" y="53.17" width="55" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="Hji_fCHVWQs6ifgiZRv4-44" value="" style="group;labelBackgroundColor=none;fontColor=#1D3557;" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="360" y="500" width="130" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="Hji_fCHVWQs6ifgiZRv4-45" value="" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#A8DADC;strokeColor=#457B9D;fontColor=#1D3557;" vertex="1" parent="Hji_fCHVWQs6ifgiZRv4-44">
+          <mxGeometry x="10" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Hji_fCHVWQs6ifgiZRv4-46" value="" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#A8DADC;strokeColor=#457B9D;fontColor=#1D3557;" vertex="1" parent="Hji_fCHVWQs6ifgiZRv4-44">
+          <mxGeometry y="100" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Hji_fCHVWQs6ifgiZRv4-47" value="Node with the base model" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;fontColor=#1D3557;" vertex="1" parent="Hji_fCHVWQs6ifgiZRv4-44">
+          <mxGeometry x="20" y="115" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Hji_fCHVWQs6ifgiZRv4-48" value="Task specific LoRA" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#A8DADC;strokeColor=#457B9D;fontColor=#1D3557;" vertex="1" parent="Hji_fCHVWQs6ifgiZRv4-44">
+          <mxGeometry y="10" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Hji_fCHVWQs6ifgiZRv4-49" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=none;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://www.svgrepo.com/show/57121/two-thin-arrows-forming-a-circle.svg;rotation=60;fillColor=#A8DADC;strokeColor=#457B9D;fontColor=#1D3557;" vertex="1" parent="Hji_fCHVWQs6ifgiZRv4-44">
+          <mxGeometry x="32.5" y="53.17" width="55" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="Hji_fCHVWQs6ifgiZRv4-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;labelBackgroundColor=none;fontColor=default;strokeColor=#457B9D;" edge="1" parent="1" source="Hji_fCHVWQs6ifgiZRv4-1" target="Hji_fCHVWQs6ifgiZRv4-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Hji_fCHVWQs6ifgiZRv4-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;labelBackgroundColor=none;fontColor=default;strokeColor=#457B9D;" edge="1" parent="1" source="Hji_fCHVWQs6ifgiZRv4-3" target="Hji_fCHVWQs6ifgiZRv4-40">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="290" y="370" />
+              <mxPoint x="290" y="400" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Hji_fCHVWQs6ifgiZRv4-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;labelBackgroundColor=none;fontColor=default;strokeColor=#457B9D;" edge="1" parent="1" source="Hji_fCHVWQs6ifgiZRv4-1" target="Hji_fCHVWQs6ifgiZRv4-46">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Hji_fCHVWQs6ifgiZRv4-56" value="" style="group;labelBackgroundColor=none;fontColor=#1D3557;" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="10" y="350" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Hji_fCHVWQs6ifgiZRv4-57" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;labelBackgroundColor=none;fontColor=default;strokeColor=#457B9D;" edge="1" parent="Hji_fCHVWQs6ifgiZRv4-56" source="Hji_fCHVWQs6ifgiZRv4-55" target="Hji_fCHVWQs6ifgiZRv4-54">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Hji_fCHVWQs6ifgiZRv4-55" value="" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#A8DADC;strokeColor=#457B9D;fontColor=#1D3557;" vertex="1" parent="Hji_fCHVWQs6ifgiZRv4-56">
+          <mxGeometry width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Hji_fCHVWQs6ifgiZRv4-54" value="Request" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;fontColor=#1D3557;" vertex="1" parent="Hji_fCHVWQs6ifgiZRv4-56">
+          <mxGeometry x="10" y="5" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Hji_fCHVWQs6ifgiZRv4-59" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;labelBackgroundColor=none;fontColor=default;strokeColor=#457B9D;" edge="1" parent="1" source="Hji_fCHVWQs6ifgiZRv4-55" target="Hji_fCHVWQs6ifgiZRv4-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Hji_fCHVWQs6ifgiZRv4-68" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="50" y="430" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Hji_fCHVWQs6ifgiZRv4-67" value="" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#457B9D;fontColor=#1D3557;fillColor=#A8DADC;" vertex="1" parent="Hji_fCHVWQs6ifgiZRv4-68">
+          <mxGeometry x="20" y="2.5" width="20" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="Hji_fCHVWQs6ifgiZRv4-63" value="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#1D3557;" vertex="1" parent="Hji_fCHVWQs6ifgiZRv4-68">
+          <mxGeometry width="60" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
