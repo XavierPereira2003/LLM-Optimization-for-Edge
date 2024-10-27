@@ -3,7 +3,8 @@ from transformers import AutoModelForSequenceClassification, AutoTokenizer
 import logging
 import os
 import sys
-
+from datasets import load_from_disk
+import random
 """
 log_path="./logs/"
 os.makedirs("./logs/", exist_ok=True) 
@@ -16,6 +17,8 @@ logging.basicConfig(
     ]
 )
 """
+
+
 
 class Classifier:
     def __init__(self) -> None:
@@ -43,7 +46,28 @@ class Classifier:
         self.logger.debug(f"Generated the output '{predicted_class}'")
         return int(predicted_class)
 
+class BoolqDataset:
+    def __init__(self) -> None:
+        print((f'File Path {os.path.join(os.path.dirname(os.path.abspath(__file__)), "/Boolq")}'))
+        self.data=load_from_disk(os.path.join(os.path.dirname(os.path.abspath(__file__)), "/Boolq"))
+        
 
+    def randomData(self)->str:
+        return self.data[random.randint(0,9427)]['input_text']
+
+class CopaDataset:
+    def __init__(self) -> None:
+        self.data=load_from_disk(os.path.join(os.path.dirname(os.path.abspath(__file__)), "/copa"))
+
+    def randomData(self)->str:
+        return self.data[random.randint(0,400)]['input_text']
+
+class CombindedDataset:
+    def __init__(self) -> None:
+        self.data=load_from_disk(os.path.join(os.path.dirname(os.path.abspath(__file__)), "/Boolq_and_copa"))
+
+    def randomData(self)->str:
+        return self.data[random.randint(0,9827)]['input_text']
 
 if __name__=="__main__":
     inputs="do good samaritan laws protect those who help at an accident"

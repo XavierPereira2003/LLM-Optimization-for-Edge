@@ -4,7 +4,7 @@ from services_pb2 import JsonRequest
 from services_pb2_grpc import JsonProcessor1Stub, JsonProcessor2Stub
 import time
 import logging
-from Models.Bert import Classifier
+from Models.Bert import Classifier, BoolqDataset, CombindedDataset, CopaDataset
 logging.basicConfig(
     level=logging.DEBUG,  
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
@@ -89,13 +89,11 @@ class MainService:
 
 # Example usage (run.py)
 if __name__ == '__main__':
-
+    test=BoolqDataset().randomData()
     
     # Create and use the main service
     main_service = MainService()
     try:
-        print("Sending test JSON:", json.dumps(test_json, indent=2))
-        result = main_service.process_json(test_json)
-        print("\nProcessed result:", json.dumps(result, indent=2))
+        result = main_service.process_json(test)
     finally:
         main_service.close()
