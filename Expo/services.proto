@@ -12,10 +12,10 @@ message JsonResponse {
     string message = 3;
 }
 
-service Service1 {
-    rpc ProcessData (JsonRequest) returns (JsonResponse) {}
+service JsonProcessor1 {
+    rpc ProcessJson (JsonRequest) returns (JsonResponse);
 }
 
-service Service2 {
-    rpc ProcessData (JsonRequest) returns (JsonResponse) {}
+service JsonProcessor2 {
+    rpc ProcessJson (JsonRequest) returns (JsonResponse);
 }

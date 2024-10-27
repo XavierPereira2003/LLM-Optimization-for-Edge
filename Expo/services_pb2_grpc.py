@@ -3,7 +3,7 @@
 import grpc
 import warnings
 
-import service_pb2 as service__pb2
+import services_pb2 as services__pb2
 
 GRPC_GENERATED_VERSION = '1.67.0'
 GRPC_VERSION = grpc.__version__
@@ -18,14 +18,14 @@ except ImportError:
 if _version_not_supported:
     raise RuntimeError(
         f'The grpc package installed is at version {GRPC_VERSION},'
-        + f' but the generated code in service_pb2_grpc.py depends on'
+        + f' but the generated code in services_pb2_grpc.py depends on'
         + f' grpcio>={GRPC_GENERATED_VERSION}.'
         + f' Please upgrade your grpc module to grpcio>={GRPC_GENERATED_VERSION}'
         + f' or downgrade your generated code using grpcio-tools<={GRPC_VERSION}.'
     )
 
 
-class Service1Stub(object):
+class JsonProcessor1Stub(object):
     """Missing associated documentation comment in .proto file."""
 
     def __init__(self, channel):
@@ -34,43 +34,43 @@ class Service1Stub(object):
         Args:
             channel: A grpc.Channel.
         """
-        self.ProcessData = channel.unary_unary(
-                '/services.Service1/ProcessData',
-                request_serializer=service__pb2.JsonRequest.SerializeToString,
-                response_deserializer=service__pb2.JsonResponse.FromString,
+        self.ProcessJson = channel.unary_unary(
+                '/services.JsonProcessor1/ProcessJson',
+                request_serializer=services__pb2.JsonRequest.SerializeToString,
+                response_deserializer=services__pb2.JsonResponse.FromString,
                 _registered_method=True)
 
 
-class Service1Servicer(object):
+class JsonProcessor1Servicer(object):
     """Missing associated documentation comment in .proto file."""
 
-    def ProcessData(self, request, context):
+    def ProcessJson(self, request, context):
         """Missing associated documentation comment in .proto file."""
         context.set_code(grpc.StatusCode.UNIMPLEMENTED)
         context.set_details('Method not implemented!')
         raise NotImplementedError('Method not implemented!')
 
 
-def add_Service1Servicer_to_server(servicer, server):
+def add_JsonProcessor1Servicer_to_server(servicer, server):
     rpc_method_handlers = {
-            'ProcessData': grpc.unary_unary_rpc_method_handler(
-                    servicer.ProcessData,
-                    request_deserializer=service__pb2.JsonRequest.FromString,
-                    response_serializer=service__pb2.JsonResponse.SerializeToString,
+            'ProcessJson': grpc.unary_unary_rpc_method_handler(
+                    servicer.ProcessJson,
+                    request_deserializer=services__pb2.JsonRequest.FromString,
+                    response_serializer=services__pb2.JsonResponse.SerializeToString,
             ),
     }
     generic_handler = grpc.method_handlers_generic_handler(
-            'services.Service1', rpc_method_handlers)
+            'services.JsonProcessor1', rpc_method_handlers)
     server.add_generic_rpc_handlers((generic_handler,))
-    server.add_registered_method_handlers('services.Service1', rpc_method_handlers)
+    server.add_registered_method_handlers('services.JsonProcessor1', rpc_method_handlers)
 
 
  # This class is part of an EXPERIMENTAL API.
-class Service1(object):
+class JsonProcessor1(object):
     """Missing associated documentation comment in .proto file."""
 
     @staticmethod
-    def ProcessData(request,
+    def ProcessJson(request,
             target,
             options=(),
             channel_credentials=None,
@@ -83,9 +83,9 @@ class Service1(object):
         return grpc.experimental.unary_unary(
             request,
             target,
-            '/services.Service1/ProcessData',
-            service__pb2.JsonRequest.SerializeToString,
-            service__pb2.JsonResponse.FromString,
+            '/services.JsonProcessor1/ProcessJson',
+            services__pb2.JsonRequest.SerializeToString,
+            services__pb2.JsonResponse.FromString,
             options,
             channel_credentials,
             insecure,
@@ -97,7 +97,7 @@ class Service1(object):
             _registered_method=True)
 
 
-class Service2Stub(object):
+class JsonProcessor2Stub(object):
     """Missing associated documentation comment in .proto file."""
 
     def __init__(self, channel):
@@ -106,43 +106,43 @@ class Service2Stub(object):
         Args:
             channel: A grpc.Channel.
         """
-        self.ProcessData = channel.unary_unary(
-                '/services.Service2/ProcessData',
-                request_serializer=service__pb2.JsonRequest.SerializeToString,
-                response_deserializer=service__pb2.JsonResponse.FromString,
+        self.ProcessJson = channel.unary_unary(
+                '/services.JsonProcessor2/ProcessJson',
+                request_serializer=services__pb2.JsonRequest.SerializeToString,
+                response_deserializer=services__pb2.JsonResponse.FromString,
                 _registered_method=True)
 
 
-class Service2Servicer(object):
+class JsonProcessor2Servicer(object):
     """Missing associated documentation comment in .proto file."""
 
-    def ProcessData(self, request, context):
+    def ProcessJson(self, request, context):
         """Missing associated documentation comment in .proto file."""
         context.set_code(grpc.StatusCode.UNIMPLEMENTED)
         context.set_details('Method not implemented!')
         raise NotImplementedError('Method not implemented!')
 
 
-def add_Service2Servicer_to_server(servicer, server):
+def add_JsonProcessor2Servicer_to_server(servicer, server):
     rpc_method_handlers = {
-            'ProcessData': grpc.unary_unary_rpc_method_handler(
-                    servicer.ProcessData,
-                    request_deserializer=service__pb2.JsonRequest.FromString,
-                    response_serializer=service__pb2.JsonResponse.SerializeToString,
+            'ProcessJson': grpc.unary_unary_rpc_method_handler(
+                    servicer.ProcessJson,
+                    request_deserializer=services__pb2.JsonRequest.FromString,
+                    response_serializer=services__pb2.JsonResponse.SerializeToString,
             ),
     }
     generic_handler = grpc.method_handlers_generic_handler(
-            'services.Service2', rpc_method_handlers)
+            'services.JsonProcessor2', rpc_method_handlers)
     server.add_generic_rpc_handlers((generic_handler,))
-    server.add_registered_method_handlers('services.Service2', rpc_method_handlers)
+    server.add_registered_method_handlers('services.JsonProcessor2', rpc_method_handlers)
 
 
  # This class is part of an EXPERIMENTAL API.
-class Service2(object):
+class JsonProcessor2(object):
     """Missing associated documentation comment in .proto file."""
 
     @staticmethod
-    def ProcessData(request,
+    def ProcessJson(request,
             target,
             options=(),
             channel_credentials=None,
@@ -155,9 +155,9 @@ class Service2(object):
         return grpc.experimental.unary_unary(
             request,
             target,
-            '/services.Service2/ProcessData',
-            service__pb2.JsonRequest.SerializeToString,
-            service__pb2.JsonResponse.FromString,
+            '/services.JsonProcessor2/ProcessJson',
+            services__pb2.JsonRequest.SerializeToString,
+            services__pb2.JsonResponse.FromString,
             options,
             channel_credentials,
             insecure,

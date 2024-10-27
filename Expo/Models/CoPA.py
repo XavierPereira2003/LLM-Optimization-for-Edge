@@ -9,6 +9,7 @@ import sys
 from datasets import load_from_disk
 import random
 # Configure logging to current directory
+"""
 logging.basicConfig(
     level=logging.DEBUG,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
@@ -17,10 +18,10 @@ logging.basicConfig(
  #       logging.StreamHandler(sys.stdout)  # Also log to console
     ]
 )
+"""
 
 
-
-class CopqModel:
+class CopaModel:
     def __init__(self) -> None:
         self.logger= logging.getLogger('CopqLogger')
         
@@ -53,7 +54,7 @@ if __name__=="__main__":
     copa=load_from_disk(os.path.join(os.path.dirname(os.path.abspath(__file__)), "copa"))
 
     inputs=copa[random.randint(0,400)]['input_text']
-    Copa=CopqModel()
+    Copa=CopaModel()
 
     outputs=Copa.predict(inputs)
     print(outputs)

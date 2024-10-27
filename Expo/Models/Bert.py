@@ -4,6 +4,7 @@ import logging
 import os
 import sys
 
+"""
 log_path="./logs/"
 os.makedirs("./logs/", exist_ok=True) 
 logging.basicConfig(
@@ -14,13 +15,12 @@ logging.basicConfig(
         logging.StreamHandler(sys.stdout)
     ]
 )
-
+"""
 
 class Classifier:
     def __init__(self) -> None:
         self.logger=logging.getLogger("Bert_logger")
-        model_path =os.path.join(os.path.dirname(os.path.abspath(__file__)), "Bert_classifier")
-
+        model_path =os.path.join(os.path.dirname(os.path.abspath(__file__)), "/Bert_classifier")
         self.logger.debug(f"File Path {model_path}")
 
         self.classifier_model=AutoModelForSequenceClassification.from_pretrained(model_path)
@@ -42,7 +42,8 @@ class Classifier:
         predicted_class = torch.argmax(logits, dim=-1).item()  
         self.logger.debug(f"Generated the output '{predicted_class}'")
         return int(predicted_class)
-    
+
+
 
 if __name__=="__main__":
     inputs="do good samaritan laws protect those who help at an accident"
