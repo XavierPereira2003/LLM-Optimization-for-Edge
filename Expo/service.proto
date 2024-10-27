@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package services;
+
+message JsonRequest {
+    string json_data = 1;
+}
+
+message JsonResponse {
+    string json_data = 1;
+    bool success = 2;
+    string message = 3;
+}
+
+service Service1 {
+    rpc ProcessData (JsonRequest) returns (JsonResponse) {}
+}
+
+service Service2 {
+    rpc ProcessData (JsonRequest) returns (JsonResponse) {}
+}
