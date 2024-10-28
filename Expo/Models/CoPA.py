@@ -31,7 +31,7 @@ class CopaModel:
         self.logger.debug("Model and Tokenizer is loaded")
 
         # Load the LoRA model
-        self.lora_model_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "flan_t5_copa_lora_saved")
+        self.lora_model_path = "/home/deon/code/Project/Expo/Models/flan_t5_copa_lora_saved"
         self.lora_config = LoraConfig.from_pretrained(self.lora_model_path)
         self.model = get_peft_model(self.model, self.lora_config)
 

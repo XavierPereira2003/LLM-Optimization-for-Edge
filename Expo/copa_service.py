@@ -18,7 +18,7 @@ logger=logging.getLogger("CopaService")
 class CopaService(JsonProcessor2Servicer):
     def __init__(self) -> None:
         self.model=CopaModel()
-        logger.info("Boolq Model is loaded")
+        logger.info("CoPA Model is loaded")
     def ProcessJson(self, request, context):
         try:
             # Validate and parse JSON data from Service1
@@ -30,18 +30,19 @@ class CopaService(JsonProcessor2Servicer):
             prompt=data['prompt']
             ouptut=self.model.predict(prompt)
             # Process the JSON data
-            processed_data = {
+            Return_Data = {
                 "metadata": {
-                    "processor": "Boolq Service",
+                    "processor": "CoPa   Service",
                     "timestamp": time.strftime('%Y-%m-%d %H:%M:%S'),
                     "processing_id": str(time.time())
                 },
                 "original_data": data,
                 "Output":ouptut
             }
-            
+            Return_Data=json.dumps(Return_Data)
+            logger.debug(f"Return_data: {Return_Data}")
             return JsonResponse(
-                json_data=json.dumps(processed_data),
+                json_data=Return_Data,
                 success=True,
                 message="JSON successfully processed by Service2"
             )
@@ -65,6 +66,9 @@ def serve():
     print("JSON Service 2 starting on port 50052...")
     server.start()
     server.wait_for_termination()
+
+
+#rakuten_python copa_service.py
 
 if __name__ == '__main__':
     print("Running....")

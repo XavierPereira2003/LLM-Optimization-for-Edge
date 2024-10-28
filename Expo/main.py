@@ -43,21 +43,25 @@ class MainService:
             }
             json_data=json.dumps(json_data)
             predictedClass= self.model.classify_text(data)
-            if predictedClass==1:
+            if predictedClass==0:
                 # Step 1: Process with Service1
                 request1 = JsonRequest(json_data=json_data)
                 response1 = self.stub1.ProcessJson(request1)
-                
+                logger.debug(f"respones1: {response1}")
                 if not response1.success:
                     return {
                         "error": f"Service1 processing failed: {response1.message}",
                         "success": False
                     }
                 
-                result=response1
+                result={
+                    "json_data": response1.json_data,
+                    "success": response1.success,
+                    "message": response1.message
+                }
             else:
                 # Step 2: Process with Service2
-                request2 = JsonRequest(json_data=response1.json_data)
+                request2 = JsonRequest(json_data=json_data)
                 response2 = self.stub2.ProcessJson(request2)
                 
                 if not response2.success:
@@ -66,7 +70,11 @@ class MainService:
                         "success": False
                 }
 
-                result=response1
+                result={
+                    "json_data": response2.json_data,
+                    "success": response2.success,
+                    "message": response2.message
+                }
 
             result["success"] = True
             return result
@@ -86,14 +94,14 @@ class MainService:
         self.channel1.close()
         self.channel2.close()
         print("JSON Main Service connections closed")
-
+#rakuten_python main.py
 # Example usage (run.py)
 if __name__ == '__main__':
-    test=BoolqDataset().randomData()
-    
+    test=CopaDataset().randomData()
     # Create and use the main service
     main_service = MainService()
     try:
         result = main_service.process_json(test)
+        print(result)
     finally:
         main_service.close()

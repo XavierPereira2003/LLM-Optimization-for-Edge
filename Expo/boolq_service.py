@@ -24,7 +24,7 @@ class BoolqService(JsonProcessor1Servicer):
         logger.info("Boolq Model is loaded")
 
     def ProcessJson(self, request, context):
-        logger.log("Request Process is Initiated")
+        logger.info("Request Process is Initiated")
         try:
             # Validate and parse JSON data
             if not request.json_data:
@@ -45,11 +45,14 @@ class BoolqService(JsonProcessor1Servicer):
                 "Output":ouptut
             }
             logger.debug(f" The output:{Return_Data}")
-            return JsonResponse(
-                json_data=json.dumps(Return_Data),
+            Return_Data=json.dumps(Return_Data)
+            response=JsonResponse(
+                json_data=  Return_Data,
                 success=True,
                 message="JSON successfully processed by Service1"
             )
+            logger.debug(f"JsonRespones: {response}")
+            return response
         except json.JSONDecodeError as e:
             return JsonResponse(
                 json_data="",
@@ -71,7 +74,7 @@ def serve():
     print("JSON Service 1 starting on port 50051...")
     server.start()
     server.wait_for_termination()
-
+#rakuten_python boolq_service.py
 if __name__ == '__main__':
     print("Running....")
     serve()
