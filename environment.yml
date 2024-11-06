@@ -1,4 +1,4 @@
-name: rakuten_project
+name: llm_optimisation
 channels:
   - pytorch
   - nvidia
@@ -11,9 +11,11 @@ dependencies:
   - aiohappyeyeballs=2.4.0=py311h06a4308_0
   - aiohttp=3.10.5=py311h5eee18b_0
   - aiosignal=1.2.0=pyhd3eb1b0_0
+  - anyio=4.6.2=py311h06a4308_0
   - arrow=1.2.3=py311h06a4308_1
   - arrow-cpp=16.1.0=hc1eb8f0_0
   - asttokens=2.0.5=pyhd3eb1b0_0
+  - async-timeout=4.0.3=py311h06a4308_0
   - attrs=23.1.0=py311h06a4308_0
   - aws-c-auth=0.6.19=h5eee18b_0
   - aws-c-cal=0.5.20=hdbd6064_0
@@ -77,9 +79,13 @@ dependencies:
   - gmp=6.2.1=h295c915_3
   - gmpy2=2.1.2=py311hc9b5ff0_0
   - gnutls=3.6.15=he1e5248_0
+  - greenlet=3.0.1=py311h6a678d5_0
   - gst-plugins-base=1.14.1=h6a678d5_1
   - gstreamer=1.14.1=h5eee18b_1
+  - h11=0.14.0=py311h06a4308_0
   - hjson-py=3.1.0=pyhd8ed1ab_0
+  - httpcore=1.0.2=py311h06a4308_0
+  - httpx=0.27.0=py311h06a4308_0
   - huggingface_hub=0.24.6=py311h06a4308_0
   - icu=73.1=h6a678d5_0
   - idna=3.7=py311h06a4308_0
@@ -92,12 +98,18 @@ dependencies:
   - jinja2=3.1.4=py311h06a4308_0
   - joblib=1.4.2=py311h06a4308_0
   - jpeg=9e=h5eee18b_3
+  - jsonpatch=1.33=py311h06a4308_1
+  - jsonpointer=2.1=pyhd3eb1b0_0
   - jupyter_client=8.6.0=py311h06a4308_0
   - jupyter_core=5.7.2=py311h06a4308_0
   - jupyterlab_widgets=3.0.13=pyhd8ed1ab_0
   - kiwisolver=1.4.4=py311h6a678d5_0
   - krb5=1.20.1=h143b758_1
   - lame=3.100=h7b6447c_0
+  - langchain=0.3.4=pyhd8ed1ab_0
+  - langchain-core=0.3.12=pyhd8ed1ab_0
+  - langchain-text-splitters=0.3.0=pyhd8ed1ab_0
+  - langsmith=0.1.129=pyhd8ed1ab_0
   - lcms2=2.12=h3be6417_0
   - ld_impl_linux-64=2.38=h1181459_1
   - lerc=3.0=h295c915_0
@@ -183,6 +195,7 @@ dependencies:
   - openjpeg=2.5.2=he7f1fd0_0
   - openssl=3.3.1=hb9d3cd8_3
   - orc=2.0.1=h2d29ad5_0
+  - orjson=3.10.7=py311h97a8848_0
   - packaging=24.1=py311h06a4308_0
   - pandas=2.2.2=py311ha02d727_0
   - parso=0.8.3=pyhd3eb1b0_0
@@ -234,10 +247,13 @@ dependencies:
   - sip=6.7.12=py311h6a678d5_0
   - six=1.16.0=pyhd3eb1b0_1
   - snappy=1.2.1=h6a678d5_0
+  - sniffio=1.3.0=py311h06a4308_0
+  - sqlalchemy=2.0.34=py311h00e1ef3_0
   - sqlite=3.45.3=h5eee18b_0
   - stack_data=0.2.0=pyhd3eb1b0_0
   - sympy=1.13.2=py311h06a4308_0
   - tbb=2021.8.0=hdb19cb5_0
+  - tenacity=8.2.3=py311h06a4308_0
   - text-unidecode=1.3=pyhd3eb1b0_0
   - threadpoolctl=3.5.0=py311h92b7b1e_0
   - tk=8.6.14=h39e8969_0
@@ -270,10 +286,15 @@ dependencies:
   - pip:
       - annotated-types==0.7.0
       - deepspeed==0.15.1
+      - grpcio==1.67.0
+      - grpcio-tools==1.67.0
+      - lockfile==0.12.2
       - ninja==1.11.1.1
       - nvidia-ml-py==12.560.30
+      - protobuf==5.28.3
       - pydantic==2.9.1
       - pydantic-core==2.23.3
       - pyswarm==0.6
+      - python-daemon==3.1.0
       - torchsummary==1.5.1
-prefix: /home/deon/miniconda3/envs/rakuten_project
+
